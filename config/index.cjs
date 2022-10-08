@@ -1,67 +1,23 @@
-/* eslint-disable */
+{
+# 公众号配置
+# 公众号appId
+"app_id": "wx14106837a647e269",
+# 公众号appSecret
+"app_secret": "c7f65199dd10458972c445604d4f88ab",
+# 模板消息id
+"template_id": "_DlSxhAK6lW_NiUYdw66_2ihly4J1Li8YIYFBk1sG2U",
+# 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["wx1", "wx2"]
+"user": ["o-a1U6AhfGKziF6CVdSmPybqJbQA"],
 
-/**
- * 此项目配置为方便新人使用，已缩减至最简配置。
- * 如若想使用更多功能，请查考文档中的 【3. config参数说明】 
- * 自行添加属性，以支持更多个性化功能
- */
-const USER_CONFIG = {
+# 信息配置
+# 所在省份
+"province": "安徽",
+# 所在城市
+"city": "宣城",
+# 生日1，修改name为对应需要显示的名字，如果生日为农历，在最前面加上r即可
+"birthday1": {"name": "胡梦蝶", "birthday": "r2001-011-13"},
+# 生日2
 
-  // 使用微信测试号：公众号APP_ID
-  APP_ID: '',
-
-  // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '',
-
-  PROVINCE: '广东',
-  CITY: '惠州',
-
-  USERS: [
-    {
-      // 想要发送的人的名字
-      name: '宝贝',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-      ],
-    },
-  ],
-
-
-  // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
-
-  CALLBACK_USERS: [
-    {
-      name: '自己',
-      // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
-    }
-  ],
-
+# 在一起的日子，格式同上
+"love_date": "2020-1-1"
 }
-
-module.exports = USER_CONFIG
-
